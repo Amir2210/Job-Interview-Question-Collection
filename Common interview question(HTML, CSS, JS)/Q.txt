@@ -1,0 +1,32 @@
+1. What is the importance of Doctype in HTML?
+answer: 
+Doctype tells the browser which version of HTML/XHTML standard is used and how to render the page.
+
+2. What is the difference between display: none and visibility:hidden?
+answer:
+
+display:none remove the element from the flow, allowing other elements to fill in.
+visibility:hidden only hides the element, but space is allocated for it on the page
+
+3. What is the difference between sessionStorage and localStorage
+answer:
+
+sessionStorage is available only when the browser tab is opened.
+localStorage survives when closing and reopening the browser
+
+4. What are data attributes
+answer:
+data attributes are used to store custom data directly in the HTML tags.
+data attributes let you store any kind of information you want on an element.
+This data is private to the page and isn't used by the browser itself.
+
+5. What are sprites
+answer:
+css sprites is merging multiple images into a single image, it reduces the amount of web request and increases page speed
+
+6. What is CSS preprocessor
+answer:
+A CSS preprocessor is a programming language that extends the functionality of CSS.
+It allows you to write cleaner, more maintainable, and more powerful stylesheets.
+Here's a breakdown of what CSS preprocessor are and how they benefit web developers
+
