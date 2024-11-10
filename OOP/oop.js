@@ -65,3 +65,22 @@ class VirtualPet extends Pet {
 
 const virtualPet1 = new VirtualPet('loka', 33, 'run super fast')
 virtualPet1.display()
+
+//Static class members
+
+class Person {
+  static id = 100
+  constructor(name, lastName) {
+    this.id = ++Person.id
+    this.name = name
+    this.lastName = lastName
+  }
+
+  static getPersons() {
+    return [new Person('tal', 'yankolvocich'), new Person('shay', 'yankolovich')]
+  }
+}
+
+const person1 = new Person('amir', 'yankolovich')
+console.log('person1:', person1)
+console.log(Person.getPersons())
