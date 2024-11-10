@@ -28,9 +28,9 @@ console.log('user1:', user1)
 const isPass = user1.checkIfPass('secret')
 console.log('result:', isPass)
 
-// class
+// class and inheritance
 
-class pet {
+class Pet {
   constructor(name, score) {
     this.name = name
     this.score = score
@@ -43,8 +43,25 @@ class pet {
   }
 }
 
-const pet1 = new pet('joy', 22)
-const pet2 = new pet('bobi', 10)
+const pet1 = new Pet('joy', 22)
+const pet2 = new Pet('bobi', 10)
 
 pet1.display()
 pet2.feed('pizza')
+
+class VirtualPet extends Pet {
+  constructor(name, score, superPower) {
+    super(name, score)
+    this.superPower = superPower
+  }
+  // Override function to extend behavior
+  display() {
+    console.log('this is virtual pet')
+    console.log('my super power is: ', this.superPower)
+    //use the display function from the superClass Pet
+    super.display()
+  }
+}
+
+const virtualPet1 = new VirtualPet('loka', 33, 'run super fast')
+virtualPet1.display()
