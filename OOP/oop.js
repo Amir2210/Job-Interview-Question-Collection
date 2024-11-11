@@ -49,6 +49,8 @@ const pet2 = new Pet('bobi', 10)
 pet1.display()
 pet2.feed('pizza')
 
+console.log(pet1.display === pet2.display) // true
+
 class VirtualPet extends Pet {
   constructor(name, score, superPower) {
     super(name, score)
@@ -84,3 +86,6 @@ class Person {
 const person1 = new Person('amir', 'yankolovich')
 console.log('person1:', person1)
 console.log(Person.getPersons())
+console.log(person1.__proto__)
+console.log(person1.__proto__.__proto__)
+console.log(person1.__proto__.__proto__.__proto__)
