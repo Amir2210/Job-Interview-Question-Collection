@@ -34,3 +34,18 @@ Here's a breakdown of what CSS preprocessor are and how they benefit web develop
 answer: Asynchronous Javascript And Xml: Allows us to communicate with remote web servers in an Asynchronous way.
 with AJAX calls we can request data from web servers dynamically
 
+8.What are semantic HTML tags, and why are they important?
+answer:Semantic HTML makes your code more readable and understandable, both for yourself and other developers.
+Search engines like Google can better understand the content and context of your website.
+Screen readers can more effectively interpret the content and provide a better user experience for people with visual impairments.
+Common Semantic HTML Tags:
+
+<header>: Defines a header for a document or section.   
+<nav>: Defines navigational links.   
+<section>: Defines a generic thematic grouping of content.   
+<article>: Defines independent, self-contained content.   
+<aside>: Defines content aside from the page content.   
+<footer>: Defines a footer for a document or section.   
+<figure>: Defines self-contained content, like illustrations, diagrams, photos, code listings, etc.
+
+   
