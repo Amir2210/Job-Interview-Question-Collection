@@ -30,3 +30,7 @@ A CSS preprocessor is a programming language that extends the functionality of C
 It allows you to write cleaner, more maintainable, and more powerful stylesheets.
 Here's a breakdown of what CSS preprocessor are and how they benefit web developers
 
+7.What is AJAX
+answer: Asynchronous Javascript And Xml: Allows us to communicate with remote web servers in an Asynchronous way.
+with AJAX calls we can request data from web servers dynamically
+
