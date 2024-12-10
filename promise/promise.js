@@ -1,3 +1,19 @@
+// A Promise in JavaScript is an object representing the eventual completion (or failure) of an asynchronous
+//  operation and its resulting value. It's a way to handle asynchronous operations more elegantly than
+//   traditional callback functions, making your code more readable and maintainable.
+
+// States:
+// Pending: Initial state, neither fulfilled nor rejected.   
+// Fulfilled: Operation completed successfully.   
+// Rejected: Operation failed. 
+
+// Methods:
+// then(): Used to handle the fulfilled state of the promise. It takes two optional arguments:
+// A callback function that receives the resolved value.   
+// A callback function that receives the rejection reason.   
+// catch(): Used to handle the rejected state of the promise.
+//  It takes a single callback function that receives the rejection reason.
+
 const myPromiseSuccess = new Promise((res, rej) => {
   res('promise fulfilled')
 })
