@@ -45,3 +45,19 @@ chainPromise.then((result) => {
 }).catch((err) => {
   console.log(err)
 })
+
+
+// async await example
+const fetchPokemon = async (pokemonName) => {
+  try {
+    const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
+    console.log(res)
+    const pokemonData = await res.json()
+    console.log(pokemonData)
+  } catch (error) {
+    console.log('ERROR!')
+    console.log('error:', error)
+  }
+}
+
+fetchPokemon('charizard')
