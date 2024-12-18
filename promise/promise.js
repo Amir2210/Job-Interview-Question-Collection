@@ -46,6 +46,26 @@ chainPromise.then((result) => {
   console.log(err)
 })
 
+const getPokemon = (pokemonName) => {
+  fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
+    .then((res) => {
+      console.log(res)
+      if (!res.ok) {
+        throw new Error('error to fetch pokemon')
+      }
+      return res.json()
+    })
+    .then((data) => {
+      console.log(data.name)
+    })
+    .catch((err) => console.log(err, 'ERROR!'))
+}
+
+getPokemon('pikachu')
+
+
+
+
 
 // async await example
 const fetchPokemon = async (pokemonName) => {
@@ -53,7 +73,7 @@ const fetchPokemon = async (pokemonName) => {
     const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
     console.log(res)
     const pokemonData = await res.json()
-    console.log(pokemonData)
+    console.log(pokemonData.name)
   } catch (error) {
     console.log('ERROR!')
     console.log('error:', error)
