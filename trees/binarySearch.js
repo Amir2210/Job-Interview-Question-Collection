@@ -6,18 +6,17 @@ function binarySearchIterative(arr, target) {
     const mid = Math.floor((left + right) / 2)
 
     if (arr[mid] === target) {
-      return mid // הערך נמצא, מחזירים את האינדקס
+      return mid
     } else if (arr[mid] < target) {
-      left = mid + 1 // הערך המבוקש נמצא בצד הימני
+      left = mid + 1
     } else {
-      right = mid - 1 // הערך המבוקש נמצא בצד השמאלי
+      right = mid - 1
     }
   }
-
-  return -1 // הערך לא נמצא
+  return -1
 }
 
 // דוגמה לשימוש
 const array = [1, 3, 5, 7, 9, 11, 13]
-const target = 3
+const target = 11
 console.log(binarySearchIterative(array, target)) // פלט: 3

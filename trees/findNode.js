@@ -23,6 +23,7 @@ const tree = {
 
 // DFS: מתאים למצבים שבהם חשוב להעמיק ולבדוק ענף אחד עד הסוף.
 function findNode(tree, trackId) {
+
   if (tree.id === trackId) {
     return tree
   }
@@ -37,7 +38,7 @@ function findNode(tree, trackId) {
 }
 
 
-const result = findNode(tree, 4)
+const result = findNode(tree, 3)
 // console.log(result)
 
 
@@ -47,20 +48,17 @@ function findNodeBFS(tree, trackId) {
   const queue = [tree]
 
   while (queue.length > 0) {
-    const current = queue.shift()
-
-    if (current.id === trackId) {
-      return current
+    const curr = queue.shift()
+    if (curr.id === trackId) {
+      return curr
     }
-
-    queue.push(...current.children)
+    queue.push(...curr.children)
   }
-
   return null
 }
 
 // בדיקה של הפונקציה
-const resultBFS = findNodeBFS(tree, 5);
+const resultBFS = findNodeBFS(tree, 6);
 console.log(resultBFS)
 
 

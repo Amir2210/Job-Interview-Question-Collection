@@ -34,6 +34,7 @@ function postOrderTraversal(node) {
 }
 
 
-postOrderTraversal(tree)
-// inOrderTraversal(tree)
+
 // preOrderTraversal(tree)
+// inOrderTraversal(tree)
+postOrderTraversal(tree)
