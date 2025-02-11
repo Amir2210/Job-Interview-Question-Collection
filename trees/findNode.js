@@ -23,7 +23,6 @@ const tree = {
 
 // DFS: מתאים למצבים שבהם חשוב להעמיק ולבדוק ענף אחד עד הסוף.
 function findNode(tree, trackId) {
-
   if (tree.id === trackId) {
     return tree
   }

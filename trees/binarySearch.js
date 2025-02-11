@@ -4,7 +4,6 @@ function binarySearchIterative(arr, target) {
 
   while (left <= right) {
     const mid = Math.floor((left + right) / 2)
-
     if (arr[mid] === target) {
       return mid
     } else if (arr[mid] < target) {
