@@ -36,17 +36,16 @@ class LinkedList {
 
 function reverseLinkedList(head) {
   let prev = null
-  let curr = head
+  let current = head
 
-  while (curr) {
-    const next = curr.next
-    curr.next = prev
-    prev = curr
-    curr = next
+  while (current) {
+    const next = current.next
+    current.next = prev
+    prev = current
+    current = next
   }
   return prev
 }
-
 
 // יצירת רשימה מקושרת והדפסתה
 const list = new LinkedList();
