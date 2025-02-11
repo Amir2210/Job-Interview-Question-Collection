@@ -32,3 +32,13 @@ map.forEach((value, key) => {
   console.log(value, key)
 })
 
+const map2 = new Map();
+map2.set(1, 'a');
+map2.set(2, 'b');
+map2.set(3, 'c');
+
+const iterator = map2.keys(); // יוצר איטרטור שמכיל [1, 2, 3]
+console.log(iterator.next().value); // 1
+console.log(iterator.next().value); // 2
+console.log(iterator.next().value); // 3
+console.log(iterator.next().value); // undefined
